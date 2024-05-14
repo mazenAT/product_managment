@@ -1,3 +1,14 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+product_index:
+    path: /
+    controller: App\Controller\ProductController::index
+
+import_products:
+    path: /import
+    controller: App\Controller\ImportController::import
+
+coverage_report:
+    path: /coverage
+    controller: App\Controller\CoverageController::showReport
